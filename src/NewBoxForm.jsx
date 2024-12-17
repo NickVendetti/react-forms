@@ -1,25 +1,25 @@
-import React, { useState } from "react";
-import { v4 as uuid } from 'uuid'; 
+import React, { useState } from 'react';
+import { v4 as uuid } from 'uuid';
 
 function NewBoxForm({ createBox }) {
   const [formData, setFormData] = useState({
-    height: "",
-    width: "",
-    backgroundColor: ""
+    height: '',
+    width: '',
+    backgroundColor: '',
   });
 
-  const handleChange = evt => {
+  const handleChange = (evt) => {
     const { name, value } = evt.target;
-    setFormData(formData => ({
+    setFormData((formData) => ({
       ...formData,
-      [name]: value
+      [name]: value,
     }));
   };
 
-  const gatherInput = evt => {
+  const gatherInput = (evt) => {
     evt.preventDefault();
     createBox({ ...formData, id: uuid() });
-    setFormData({ height: "", width: "", backgroundColor: "" });
+    setFormData({ height: '', width: '', backgroundColor: '' });
   };
 
   return (
@@ -33,11 +33,11 @@ function NewBoxForm({ createBox }) {
             name="height"
             value={formData.height}
             id="height"
-            />
+          />
         </div>
         <div>
           <label htmlFor="width">Width</label>
-          <input  
+          <input
             onChange={handleChange}
             type="text"
             name="width"

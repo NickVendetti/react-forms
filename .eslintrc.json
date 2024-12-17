@@ -19,14 +19,14 @@
   },
   "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
-    "prettier/prettier": ["warn"],    
-    "react/react-in-jsx-scope": "off", 
-    "no-unused-vars": "warn",         
-    "no-console": "off"               
+    "prettier/prettier": ["warn"],
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "warn",
+    "no-console": "off"
   },
   "settings": {
     "react": {
-      "version": "detect" 
+      "version": "detect"
     }
   }
 }

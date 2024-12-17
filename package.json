@@ -8,8 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-  "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-  "format": "prettier --write ."
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "react": "^18.3.1",

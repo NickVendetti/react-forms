@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 function Box({
   id,
   handleRemove,
   width = 5,
   height = 5,
-  backgroundColor = "blue"
+  backgroundColor = 'blue',
 }) {
   const remove = () => handleRemove(id);
   return (
@@ -14,7 +14,7 @@ function Box({
         style={{
           height: `${height}em`,
           width: `${width}em`,
-          backgroundColor
+          backgroundColor,
         }}
       />
       <button onClick={remove}>Remove The Box!</button>
